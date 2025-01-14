@@ -144,12 +144,57 @@ Health-Tracking-App/
 ```
 
 ---
-
 ## 📊 Visualizations
-Include screenshots or GIFs of the application, such as:
-- **Login/Registration Page**
-- **Dashboard**
-- **Graphs for Water Intake or Step Count**
+Here are some screenshots from the application:
+
+### **Login and Registration**
+- **Login Page**  
+  ![Login Page](screenshots/login-page.png)  
+
+- **Register Page**  
+  ![Register Page](screenshots/register-page.png)  
+
+- **Forget Password Page**  
+  ![Forget Password Page](screenshots/forget-password-page.png)  
+
+---
+
+### **Dashboard and Navigation**
+- **Dashboard Page**  
+  ![Dashboard Page](screenshots/dashboard-page.png)  
+
+- **About Page**  
+  ![About Page](screenshots/about-page.png)  
+
+- **Contact Page**  
+  ![Contact Page](screenshots/contact-page.png)  
+
+---
+
+### **Modules and Visualizations**
+- **Water Module**  
+  ![Water Module](screenshots/water-module.png)  
+
+- **Step Counter Module**  
+  ![Step Counter Module](screenshots/step-counter-module.png)  
+
+- **Heart Rate Module**  
+  ![Heart Rate Module](screenshots/heart-rate-module.png)  
+
+- **Sleep Module**  
+  ![Sleep Module](screenshots/sleep-module.png)  
+
+- **Height and Weight Module**  
+  ![Height and Weight Module](screenshots/height-weight-module.png)  
+
+- **Calorie Module**  
+  ![Calorie Module](screenshots/calorie-module.png)  
+
+---
+
+### **User Profile**
+- **Profile Page**  
+  ![Profile Page](screenshots/profile-page.png)  
 
 ---
 
