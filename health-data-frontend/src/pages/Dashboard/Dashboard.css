@@ -1,0 +1,112 @@
+.dashboard {
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #eaf6f9, #d3eaf2);
+  position: relative;
+  overflow: hidden;
+}
+
+.dashboard::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  width: 400px;
+  height: 400px;
+  background: url('../../assets/health-icon.png') no-repeat center;
+  background-size: contain;
+  opacity: 0.1;
+  z-index: 1;
+  animation: move 10s infinite alternate ease-in-out;
+}
+
+.dashboard::after {
+  content: '';
+  position: absolute;
+  bottom: 10%;
+  right: 20%;
+  width: 300px;
+  height: 300px;
+  background: url('../../assets/water-icon.png') no-repeat center;
+  background-size: contain;
+  opacity: 0.1;
+  z-index: 1;
+  animation: move 8s infinite alternate ease-in-out;
+}
+
+.dashboard::before,
+.dashboard::after {
+  animation: move 8s infinite alternate ease-in-out;
+}
+
+/* Yeni Eklenen Ağırlık Simgesi */
+.dashboard-weight-icon {
+  position: absolute;
+  bottom: 15%; /* Uykunun altına hizalamak için uygun değer */
+  left: 5%; /* Sol tarafa hizalama */
+  width: 150px; /* Uygun bir boyut */
+  height: 150px;
+  background: url('../../assets/weight-icon.png') no-repeat center;
+  background-size: contain;
+  opacity: 0.15; /* Arka planla uyumlu şeffaflık */
+  z-index: 0; /* Kartların altında olması için düşük z-index */
+  animation: move 10s infinite alternate ease-in-out; /* Hafif hareket animasyonu */
+}
+
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.dashboard-header .dashboard-icon {
+  font-size: 60px;
+  margin-bottom: 10px;
+  color: #e74c3c;
+  animation: heartbeat 1.5s infinite;
+}
+
+.dashboard-header h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #34495e;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.dashboard-header p {
+  font-size: 18px;
+  color: #7f8c8d;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(20px, 20px);
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

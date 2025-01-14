@@ -1,0 +1,127 @@
+.about-container {
+  padding: 20px;
+  background: linear-gradient(135deg, #e3f2fd, #f9f9f9); /* Degrade arka plan */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  min-height: 100vh; /* Tam ekran uyumu */
+  animation: fadeIn 1s ease-in-out; /* Sayfa yüklenirken animasyon */
+}
+
+/* Hero Alanı */
+.about-hero {
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  animation: shine 3s infinite;
+}
+
+.about-hero h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* İçerik Alanı */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 20px;
+}
+
+.about-text {
+  flex: 1;
+  padding: 20px;
+  background: linear-gradient(135deg, #ffffff, #f9f9f9); /* Degrade arka plan */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #333333;
+}
+
+/* Görsel Alanı */
+.about-image {
+  flex: 1;
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Animasyonlar */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shine {
+  0%, 100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.5);
+  }
+}
+
+/* Responsive Düzen */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .about-text {
+    margin-bottom: 20px;
+  }
+
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+
+  .about-hero p {
+    font-size: 1rem;
+  }
+}

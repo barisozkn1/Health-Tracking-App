@@ -1,0 +1,286 @@
+/* Genel sayfa düzeni */
+.height-weight-container {
+    padding: 20px;
+    background: linear-gradient(135deg, #e3f2fd, #f9f9f9); /* Degrade arka plan */
+    min-height: 100vh; /* Tam ekran uyumu */
+  }
+  
+  /* Başlık ve İkon */
+  .header-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .bmi-icon {
+    width: 80px;
+    height: 80px;
+    animation: bounce 2s infinite, shine 3s infinite;
+    filter: drop-shadow(0 0 10px #007bff);
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes shine {
+    0%, 100% {
+      filter: brightness(1);
+    }
+    50% {
+      filter: brightness(1.5);
+    }
+  }
+  
+  /* Özet bilgi kutusu */
+  .summary-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, #bbdefb, #e3f2fd); /* Degrade arka plan */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out; /* Fade-in animasyonu */
+  }
+  
+  .summary-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  .summary-section p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #333333;
+  }
+  
+  /* Form alanı */
+  .form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-in-out; /* Yukarıdan gelen animasyon */
+  }
+  
+  .form-section input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .form-section input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .form-section button {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #42a5f5, #64b5f6); /* Degrade arka plan */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .form-section button:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Grafik alanı */
+  .chart-section {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 400px;
+    background: linear-gradient(135deg, #f9f9f9, #ffffff); /* Degrade arka plan */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Tablo aç/kapa butonu */
+  .toggle-table-container button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #42a5f5, #64b5f6); /* Degrade arka plan */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .toggle-table-container button:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Tablo düzeni */
+  .table-section {
+    margin-top: 20px;
+    overflow-x: auto;
+    animation: fadeIn 1s ease-in-out; /* Fade-in animasyonu */
+  }
+  
+  .table-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table-section th,
+  .table-section td {
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #dddddd;
+    font-size: 1rem;
+  }
+  
+  .table-section th {
+    background: linear-gradient(135deg, #42a5f5, #64b5f6); /* Degrade arka plan */
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  .table-section tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .table-section tr:hover {
+    background-color: #d1e7fd;
+  }
+  
+/* Genel sayfa düzeni */
+.height-weight-container {
+  padding: 20px;
+  background: linear-gradient(135deg, #e3f2fd, #f9f9f9); /* Degrade arka plan */
+  min-height: 100vh; /* Tam ekran uyumu */
+}
+
+/* Düzenle ve Sil Butonları */
+.table-section .edit-btn,
+.table-section .delete-btn {
+  margin: 0 5px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px; /* Yuvarlatılmış köşeler */
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold; /* Kalın yazı */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Hover animasyonu */
+}
+
+.table-section .edit-btn {
+  background: linear-gradient(135deg, #42a5f5, #64b5f6); /* HeartRate'teki mavi */
+  color: white;
+}
+
+.table-section .edit-btn:hover {
+  background: linear-gradient(135deg, #1e88e5, #2196f3); /* Daha koyu mavi */
+  transform: scale(1.05); /* Hover'da büyüme efekti */
+}
+
+.table-section .delete-btn {
+  background: linear-gradient(135deg, #e53935, #f44336); /* HeartRate'teki kırmızı */
+  color: white;
+}
+
+.table-section .delete-btn:hover {
+  background: linear-gradient(135deg, #c62828, #d32f2f); /* Daha koyu kırmızı */
+  transform: scale(1.05); /* Hover'da büyüme efekti */
+}
+
+  
+  /* Sayfalama */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination-button {
+    border: 1px solid #3498db;
+    background: linear-gradient(135deg, #42a5f5, #64b5f6); /* Degrade arka plan */
+    color: white;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .pagination-button.active {
+    background: #2c3e50;
+  }
+  
+  .pagination-button:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Responsive düzen */
+  @media (max-width: 768px) {
+    .form-section {
+      flex-direction: column;
+    }
+  
+    .form-section input,
+    .form-section button {
+      width: 100%;
+    }
+  
+    .chart-section {
+      flex-direction: column;
+    }
+  
+    .table-section th,
+    .table-section td {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Animasyonlar */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

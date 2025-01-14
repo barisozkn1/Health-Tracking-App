@@ -1,0 +1,201 @@
+/* Degrade arka plan */
+.sleep-page-container {
+    padding: 20px;
+    background: linear-gradient(135deg, #e3f2fd, #f9f9f9);
+    min-height: 100vh; /* Tam ekran uyumu için */
+}
+
+/* Header container for the icon */
+.header-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Sleeping icon styles */
+.sleeping-icon {
+    width: 120px;
+    animation: bounce 2s infinite, shine 3s infinite;
+}
+
+/* Bounce animation for the icon */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Shine effect for the icon */
+@keyframes shine {
+    0%, 100% {
+        filter: brightness(1);
+    }
+    50% {
+        filter: brightness(1.5);
+    }
+}
+
+/* Başlık stilinde küçük iyileştirme */
+h1 {
+    text-align: center;
+    color: #34495e;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Özet bilgilerin arka planı için iyileştirme */
+.summary-section {
+    padding: 20px;
+    background: linear-gradient(135deg, #bbdefb, #e3f2fd);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out; /* Animasyon */
+}
+
+.summary-section p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #34495e;
+}
+
+/* Form stili */
+.form-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 15px;
+    animation: fadeInUp 1s ease-in-out; /* Yukarıdan gelen animasyon */
+}
+
+.form-section input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 1;
+    transition: border-color 0.3s ease;
+}
+
+.form-section input:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+.form-section button {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #4caf50, #66bb6a);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.form-section button:hover {
+    transform: scale(1.05);
+}
+
+/* Tablo göster/gizle düğmesi */
+.toggle-table-container button {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #42a5f5, #64b5f6);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.toggle-table-container button:hover {
+    transform: scale(1.05);
+}
+
+/* Tablo stilleri */
+.table-section {
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out; /* Tablo yüklenirken animasyon */
+}
+
+.sleep-table th {
+    background: linear-gradient(135deg, #42a5f5, #64b5f6);
+    color: white;
+}
+
+/* Sayfalama düğmeleri */
+.pagination-button {
+    background: linear-gradient(135deg, #42a5f5, #64b5f6);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.pagination-button:hover {
+    transform: scale(1.1);
+}
+
+/* Aktif düğme stili */
+.pagination-button.active {
+    background: #2c3e50;
+}
+
+/* Fade-in animasyonu */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Yukarıdan gelen animasyon */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Düzenle ve Sil Butonları */
+.table-section .edit-btn {
+    background: linear-gradient(135deg, #42a5f5, #64b5f6); /* Mavi degrade */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.table-section .edit-btn:hover {
+    background: linear-gradient(135deg, #1e88e5, #2196f3); /* Daha koyu mavi */
+    transform: scale(1.05);
+}
+
+.table-section .delete-btn {
+    background: linear-gradient(135deg, #e53935, #f44336); /* Kırmızı degrade */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.table-section .delete-btn:hover {
+    background: linear-gradient(135deg, #c62828, #d32f2f); /* Daha koyu kırmızı */
+    transform: scale(1.05);
+}

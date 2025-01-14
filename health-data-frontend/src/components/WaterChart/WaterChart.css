@@ -1,0 +1,13 @@
+.water-chart-container {
+    margin: 20px 0;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 400px; /* Grafiğin yüksekliğini sınırladık */
+}
+
+.water-chart-container canvas {
+    max-width: 80%; /* Genişliği ekran boyutuna göre ölçeklendirme */
+    max-height: 300px; /* Maksimum yüksekliği belirledik */
+}

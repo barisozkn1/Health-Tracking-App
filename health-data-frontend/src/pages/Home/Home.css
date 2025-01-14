@@ -1,0 +1,27 @@
+.home-container {
+    height: 98vh;
+    background: url('../../assets/home-background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    color: black;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    max-width: 600px;
+    margin-left: 100px;
+    margin-bottom: 350px;
+    
+  }
+  

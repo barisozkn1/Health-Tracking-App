@@ -1,0 +1,282 @@
+/* Genel sayfa düzeni */
+.water-intake-container {
+  padding: 20px;
+  background: linear-gradient(135deg, #e3f2fd, #f9f9f9); /* Degrade arka plan */
+  min-height: 100vh;
+}
+
+/* Başlık ve İkon */
+.header-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.droplet-icon {
+  width: 60px;
+  height: 60px;
+  animation: bounce 2s infinite, shine 3s infinite; /* Bounce ve Shine animasyonları */
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes shine {
+  0%, 100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.5);
+  }
+}
+
+/* Özet bilgi kutusu */
+.summary-section {
+  background: linear-gradient(135deg, #bbdefb, #e3f2fd); /* Degrade arka plan */
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+  animation: fadeIn 1s ease-in-out; /* Fade-in animasyonu */
+}
+
+.summary-section h3 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.summary-section p {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #333333;
+}
+
+/* Form Bölümü */
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease-in-out; /* Fade-in Up animasyonu */
+}
+
+.form-section form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.form-section input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.form-section input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.form-section button {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #42a5f5, #64b5f6); /* Degrade arka plan */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.form-section button:hover {
+  transform: scale(1.1);
+}
+
+/* Grafik Bölümü */
+.chart-section {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 400px;
+}
+
+.chart-section canvas {
+  max-width: 80%;
+  max-height: 300px;
+}
+
+/* Tablo Aç/Kapa Butonu */
+.toggle-table-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.toggle-table-container button {
+  padding: 12px 30px;
+  background: linear-gradient(135deg, #42a5f5, #64b5f6); /* Degrade arka plan */
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-table-container button:hover {
+  transform: scale(1.1);
+}
+
+/* Tablo Bölümü */
+.table-section {
+  margin-top: 20px;
+  overflow-x: auto;
+  animation: fadeIn 1s ease-in-out; /* Tablo fade-in animasyonu */
+}
+
+.water-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.water-table th,
+.water-table td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 10px;
+}
+
+.water-table th {
+  background: linear-gradient(135deg, #42a5f5, #64b5f6); /* Degrade arka plan */
+  color: white;
+  font-size: 1.2rem;
+}
+
+.water-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.water-table tr:hover {
+  background-color: #d1e7fd;
+}
+
+/* Tablo İşlem Butonları */
+.water-table td button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.water-table td button:first-child {
+  background-color: #27ae60;
+  color: white;
+}
+
+.water-table td button:last-child {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.water-table td button:hover {
+  opacity: 0.9;
+}
+
+/* Sayfalama */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-button {
+  border: 1px solid #3498db;
+  background: linear-gradient(135deg, #42a5f5, #64b5f6); /* Degrade arka plan */
+  color: white;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.pagination-button.active {
+  background: #2c3e50;
+}
+
+.pagination-button:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Düzen */
+@media (max-width: 768px) {
+  .form-section {
+    flex-direction: column;
+  }
+
+  .form-section input,
+  .form-section button {
+    width: 100%;
+  }
+
+  .chart-section {
+    flex-direction: column;
+  }
+
+  .water-table th,
+  .water-table td {
+    font-size: 0.9rem;
+  }
+}
+
+/* Düzenle ve Sil Butonları */
+.water-table .edit-btn {
+  background: linear-gradient(135deg, #42a5f5, #64b5f6); /* Mavi degrade */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.water-table .edit-btn:hover {
+  background: linear-gradient(135deg, #1e88e5, #2196f3); /* Daha koyu mavi */
+  transform: scale(1.05);
+}
+
+.water-table .delete-btn {
+  background: linear-gradient(135deg, #e53935, #f44336); /* Kırmızı degrade */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.water-table .delete-btn:hover {
+  background: linear-gradient(135deg, #c62828, #d32f2f); /* Daha koyu kırmızı */
+  transform: scale(1.05);
+}
