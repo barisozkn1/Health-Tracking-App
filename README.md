@@ -211,3 +211,6 @@ Contributions are welcome! Please fork the repository and create a pull request 
 
 ---
 
+## 📝 License
+This project is licensed under a **Proprietary License**. You are not allowed to use, distribute, or modify this software without explicit permission from the owner. For inquiries, contact [barisozkn1@gmail.com].
+
