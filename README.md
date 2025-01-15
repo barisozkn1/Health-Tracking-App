@@ -198,10 +198,6 @@ Here are some screenshots from the application:
 
 ---
 
-
-## 🤝 Contributing
-Contributions are welcome! Please fork the repository and create a pull request to suggest improvements.
-
 ---
 
 ## 📩 Contact
